@@ -35,9 +35,9 @@
     "solhint-plugin-prettier": "^0.0.5"
   },
   "scripts": {
-    "build": "forge build --hardhat",
+    "build": "SOLC_PATH=~/.svm/0.7.6/solc-0.7.6 forge build --contracts contracts --no-auto-detect",
     "clean": "forge clean",
-    "test": "forge test --hardhat",
+    "test": "SOLC_PATH=~/.svm/0.7.6/solc-0.7.6 forge test --lib-paths lib --contracts test/ --no-auto-detect",
     "lint": "solhint --config ./.solhint.json '{contracts,test}/**/*.sol' --fix",
     "prettier": "prettier --config ./.prettierrc --write '{contracts,test}/**/*.sol'",
     "prettier:list": "prettier --list-different '{contracts,test}/**/*.sol'",
