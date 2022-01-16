@@ -35,10 +35,13 @@
     "solhint-plugin-prettier": "^0.0.5"
   },
   "scripts": {
-    "compile": "forge build --hardhat",
+    "build": "forge build --hardhat",
+    "clean": "forge clean",
     "test": "forge test --hardhat",
-    "lint": "solhint --config ./.solhint.json --max-warnings 0 \"contracts/**/*.sol\"",
-    "prettier": "prettier --config ./.prettierrc.yaml --write \"**/*.{js,json,md,sol,ts}\"",
-    "prettier:check": "prettier --check --config ./.prettierrc.yaml \"**/*.{js,json,md,sol,ts}\""
+    "lint": "solhint --config ./.solhint.json '{contracts,test}/**/*.sol' --fix",
+    "prettier": "prettier --config ./.prettierrc --write '{contracts,test}/**/*.sol'",
+    "prettier:list": "prettier --list-different '{contracts,test}/**/*.sol'",
+    "prettier:check": "prettier --check --config ./.prettierrc '{contracts,test}/**/*.sol'"
+
   }
 }
