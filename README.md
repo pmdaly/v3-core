@@ -1,3 +1,25 @@
+--> have worked on implementing some of the tests but will change focus to a smaller project <--
+
+# Experimenting with Foundry
+- [ ] BitMath.spec.ts
+- [ ] FullMath.spec.ts
+- [ ] LiquidityMath.spec.ts
+- [ ] NoDelegateCall.spec.ts
+- [ ] Oracle.spec.ts
+- [ ] SqrtPriceMath.spec.ts
+- [ ] SwapMath.spec.ts
+- [ ] Tick.spec.ts
+- [ ] TickBitmap.spec.ts
+- [ ] TickMath.spec.ts
+- [ ] UniswapV3Factory.spec.ts
+- [ ] UniswapV3Pool.arbitrage.spec.ts
+- [ ] UniswapV3Pool.gas.spec.ts
+- [ ] UniswapV3Pool.spec.ts
+- [ ] UniswapV3Pool.swaps.spec.ts
+- [ ] UniswapV3Router.spec.ts
+
+
+
 # Uniswap V3
 
 [![Lint](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/lint.yml/badge.svg)](https://github.com/Uniswap/uniswap-v3-core/actions/workflows/lint.yml)
